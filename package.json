@@ -1,0 +1,78 @@
+{
+  "name": "fe_web_cnm",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@ant-design/icons": "^5.6.1",
+    "@fortawesome/fontawesome-svg-core": "^6.7.2",
+    "@fortawesome/free-solid-svg-icons": "^6.7.2",
+    "@fortawesome/react-fontawesome": "^0.2.2",
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.2.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/axios": "^0.9.36",
+    "@types/jest": "^27.5.2",
+    "@types/node": "^16.18.126",
+    "@types/react": "^18.2.55",
+    "@types/react-dom": "^18.2.19",
+    "@zegocloud/zego-uikit-prebuilt": "^2.14.3-beta",
+    "agora-rtc-sdk-ng": "^4.23.3",
+    "antd": "^5.24.6",
+    "axios": "^1.8.4",
+    "bootstrap": "^5.3.3",
+    "buffer": "^6.0.3",
+    "emoji-picker-react": "^4.12.2",
+    "https-browserify": "^1.0.0",
+    "lucide-react": "^0.488.0",
+    "process": "^0.11.10",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-modal": "^3.16.3",
+    "react-router-dom": "^6.22.1",
+    "react-scripts": "5.0.1",
+    "simple-peer": "^9.11.1",
+    "socket.io-client": "^4.8.1",
+    "stream-http": "^3.2.0",
+    "typescript": "^4.9.5",
+    "url": "^0.11.4",
+    "util": "^0.12.5",
+    "web-vitals": "^2.1.4",
+    "yet-another-react-lightbox": "^3.23.2"
+  },
+  "scripts": {
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/bootstrap": "^5.2.10",
+    "@types/react-modal": "^3.16.3",
+    "@types/react-router-dom": "^5.3.3",
+    "@types/socket.io-client": "^1.4.36",
+    "assert": "^2.1.0",
+    "crypto-browserify": "^3.12.1",
+    "os-browserify": "^0.3.0",
+    "react-app-rewired": "^2.2.1",
+    "stream-browserify": "^3.0.0"
+  }
+}

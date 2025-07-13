@@ -1,0 +1,316 @@
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  
+  .contact-page {
+    background-color: #ffffff;
+    min-height: 100vh;
+    margin-left: 464px;
+  }
+  
+  /* Header styles */
+  .header-friend {
+    background-color: white;
+    padding: 12px 16px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  
+  .header-icon {
+    height: 20px;
+    width: 20px;
+    margin-right: 8px;
+    color: #4b5563;
+  }
+  
+  .header h1 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1f2937;
+  }
+  
+  /* Content wrapper */
+  .content-wrapper {
+    background-color: #f1f2f4;
+    min-height: calc(100vh - 49px);
+    padding: 16px 0 0 0;
+  }
+  
+  /* Friend count */
+  .friend-count {
+    padding: 0 16px 16px 16px;
+  }
+  
+  .friend-count h2 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1f2937;
+  }
+  
+  /* Search and filters */
+  .search-filter-container {
+    padding: 0 16px;
+    margin-bottom: 16px;
+  }
+  
+  .search-container {
+    position: relative;
+    margin-bottom: 8px;
+  }
+  
+  .search-icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #9ca3af;
+    height: 16px;
+    width: 16px;
+    pointer-events: none; /* Đảm bảo icon không chặn tương tác với input */
+    z-index: 1; /* Đặt z-index thấp hơn input */
+  }
+  
+  .search-input-friend {
+    width: 100%;
+    padding: 8px 12px 8px 36px;
+    border: 1px solid #d1d5db;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: #ffffff;
+    position: relative;
+    z-index: 0; /* Đảm bảo input nằm dưới icon */
+  }
+  
+  .search-input-friend:focus {
+    outline: none;
+    border-color: #3b82f6;
+  }
+  
+  .filter-buttons {
+    display: flex;
+    gap: 8px;
+  }
+  
+  .filter-button {
+    padding: 8px 12px;
+    background-color: #f9fafb;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .filter-button span {
+    color: #4b5563;
+  }
+  
+  .filter-icon {
+    height: 16px;
+    width: 16px;
+    color: #6b7280;
+  }
+  
+  /* Friend list */
+  .friend-list {
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 0 16px;
+  }
+  
+  .friend-group:not(:last-child) {
+    margin-bottom: 16px;
+  }
+  
+  .group-header {
+    padding: 8px 16px;
+    background-color: #f9fafb;
+  }
+  
+  .group-header h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #4b5563;
+  }
+  
+  .friend-item {
+    padding: 12px 16px;
+    border-bottom: 1px solid #e5e7eb;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .friend-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .friend-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    position: relative;
+  }
+  
+  .avatar-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 1; 
+  }
+  
+  .friend-name {
+    margin-left: 12px;
+    font-weight: 500;
+    font-size: 14px;
+    color: #1f2937;
+  }
+  
+  .more-button {
+    padding: 4px;
+    border-radius: 50%;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .more-button:hover {
+    background-color: #f3f4f6;
+  }
+  
+  .more-icon-friend {
+    height: 20px;
+    width: 20px;
+    color: #6b7280;
+  }
+  .friend-info-popup{
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 2px;
+  }
+  .friend-info-popup ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .friend-info-popup li{
+    display: flex;
+    align-items: center;
+    padding: 8px 12px;
+    cursor: pointer;
+  }
+  .friend-info-popup li:hover{
+    background-color: #d2d2d2;
+  }
+  
+  /* Media queries for responsive design */
+  @media (min-width: 768px) {
+    .search-filter-container {
+      display: flex;
+      gap: 8px;
+    }
+  
+    .search-container {
+      flex: 1;
+      margin-bottom: 0;
+    }
+  
+    .filter-buttons {
+      width: 320px;
+    }
+  }
+
+.spinnerContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: fixed; /* Đảm bảo lớp phủ nằm trên cùng */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Lớp phủ mờ */
+  z-index: 9999; /* Đảm bảo lớp phủ luôn ở trên */
+  flex-direction: column;
+  gap: 16px; /* Khoảng cách giữa spinner và thông báo */
+}
+
+.spinner {
+  position: relative;
+  width: 80px; /* Đặt kích thước vòng xoay chính */
+  height: 80px;
+  border-radius: 50%;
+  animation: rotate 2s linear infinite; /* Thêm hiệu ứng quay vòng chính */
+}
+
+.spinner::before, .spinner::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(52, 152, 219, 0.3);
+  animation: rotateRing 1.5s linear infinite;
+}
+
+.spinner::before {
+  width: 100px;
+  height: 100px;
+  background: rgba(52, 152, 219, 0.5);
+  animation-duration: 3s;
+}
+
+.spinner::after {
+  width: 120px;
+  height: 120px;
+  background: rgba(52, 152, 219, 0.2);
+  animation-duration: 4s;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotateRing {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg); /* Quay ngược chiều để tạo sự đối xứng */
+  }
+}
